@@ -1,0 +1,130 @@
+:root {
+  --bg: #ffffff;
+  --text: #111;
+  --card: #f0f0f0;
+  --accent: #00796b;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --card: #1e1e1e;
+  --accent: #00f6ff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  transition: 0.3s;
+}
+
+.todo-container {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 15px var(--accent);
+}
+
+h1 {
+  color: var(--accent);
+  text-align: center;
+}
+
+.input-group, .top-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  font-size: 1rem;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #e0f2f1;
+  padding: 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 6px solid var(--accent);
+  transition: 0.3s;
+}
+
+body.dark li {
+  background: #222;
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.badge {
+  font-size: 0.75rem;
+  margin-left: 10px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: black;
+}
+
+.low { background: #a8ff78; }
+.medium { background: #fff76a; }
+.high { background: #ff6b6b; color: white; }
+
+li button {
+  background: transparent;
+  color: red;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#progress {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.tip-box {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  font-style: italic;
+  color: var(--accent);
+}

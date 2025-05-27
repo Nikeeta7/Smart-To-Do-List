@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="todo-container">
+    <h1>🧠 Smart To-Do List</h1>
+
+    <div class="top-controls">
+      <input type="text" id="searchInput" placeholder="🔍 Search tasks...">
+      <select id="categorySelect">
+        <option value="All">All Categories</option>
+        <option value="Work">Work</option>
+        <option value="Study">Study</option>
+        <option value="Personal">Personal</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Add a new task..." />
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <select id="category">
+        <option value="Work">Work</option>
+        <option value="Study">Study</option>
+        <option value="Personal">Personal</option>
+      </select>
+      <input type="date" id="dueDate">
+      <button onclick="addTask()">Add</button>
+      <button id="toggleTheme">🌗</button>
+    </div>
+
+    <div id="progress">
+      Progress: <span id="progressPercent">0%</span>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="tip-box">
+      💡 Tip: <span id="tipText"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
