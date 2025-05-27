@@ -7,7 +7,7 @@ Track your tasks, set priorities, categorize them, and stay productive with buil
 
 ## 🚀 Live Demo
 
-👉 [Click to View Live](https://nikeeta7.github.io/smart-todo-list/)  
+👉 [Click to View Live](https://nikeeta7.github.io/Smart-To-Do-List/)  
 _(replace with your repo link)_
 
 ---
